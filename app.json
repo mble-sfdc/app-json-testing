@@ -3,5 +3,23 @@
   "description": "A barebones Node.js app using Express 4",
   "repository": "https://github.com/heroku/nodejs-getting-started",
   "keywords": ["node", "express", "heroku"],
-  "image": "heroku/nodejs"
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "addons": [
+    {
+      "plan": "heroku-postgresql:performance-beta",
+      "options": {
+        "level": "8G-Performance"
+      }
+    }
+  ]
 }
