@@ -18,5 +18,12 @@
     {
       "plan": "heroku-postgresql:performance-beta"
     }
-  ]
+  ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "npm run test"
+      }
+    }
+  }
 }
