@@ -16,10 +16,7 @@
   ],
   "addons": [
     {
-      "plan": "heroku-postgresql:performance-beta",
-      "options": {
-        "level": "8G-Performance"
-      }
+      "plan": "heroku-postgresql:performance-beta"
     }
   ]
 }
